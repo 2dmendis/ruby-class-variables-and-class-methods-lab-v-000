@@ -19,6 +19,7 @@ class Song
   end 
   
   def self.genres
+    new_genre = @@genres
     @@genres.map do |first|
       count = 0
       if @@genres.each{|i| 
