@@ -19,9 +19,9 @@ class Song
   end 
   
   def self.genres
-new_genre = @@genres
-new_genre = new_genre.uniq 
-new_genre
+#new_genre = @@genres
+@@genres = @@genres.uniq 
+@@genres
   end 
   
   def self.artists
