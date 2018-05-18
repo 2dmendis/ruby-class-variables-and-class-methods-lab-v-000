@@ -19,32 +19,15 @@ class Song
   end 
   
   def self.genres
-=begin
-    new_genre = @@genres
-    @@genres.map do |first|
-      count = 0
-      if @@genres.each{|i| 
-        if i == first
-          count += 1 
-        end
-      }
-        
-        #@@genres.delete(first)
-      end #Because i will be rap twice!!
-      if count > 1 
-        @@genres.delete(first)
-      end 
-    end 
-    @@genres 
-    dup = @@genres.select{|element| array.count(element) > 1 }
-=end 
 new_genre = @@genres
 new_genre = new_genre.uniq 
 new_genre
   end 
   
   def self.artists
-    @@artists
+    new_artists = @@artists
+    new_artists = new_artists.uniq 
+    new_artists 
   end 
   
   def self.genre_count
