@@ -19,7 +19,7 @@ class Song
   end 
   
   def self.genres
-    =begin
+=begin
     new_genre = @@genres
     @@genres.map do |first|
       count = 0
@@ -37,7 +37,9 @@ class Song
     end 
     @@genres 
     dup = @@genres.select{|element| array.count(element) > 1 }
-    =end 
+=end 
+new_genre = @@genres
+new_genre
   end 
   
   def self.artists
