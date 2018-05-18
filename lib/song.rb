@@ -25,9 +25,9 @@ class Song
   end 
   
   def self.artists
-    new_artists = @@artists
-    new_artists = new_artists.uniq 
-    new_artists 
+    #new_artists = @@artists
+    @@artists = @@artists.uniq 
+    @@artists
   end 
   
   def self.genre_count
