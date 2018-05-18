@@ -39,6 +39,7 @@ class Song
     dup = @@genres.select{|element| array.count(element) > 1 }
 =end 
 new_genre = @@genres
+new_genre = new_genre.uniq 
 new_genre
   end 
   
