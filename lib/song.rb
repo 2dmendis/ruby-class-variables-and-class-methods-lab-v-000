@@ -35,6 +35,7 @@ class Song
       end 
     end 
     @@genres 
+    dup = @@genres.select{|element| array.count(element) > 1 }
   end 
   
   def self.artists
